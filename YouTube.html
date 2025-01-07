@@ -11,14 +11,53 @@
         font-size: 20px;
         margin-left: 12px;
       }
+
+      .video-title {
+        width: 300px;
+      }
+
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
+      }
+
+      .thumbnail,
+      .search-bar {
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <img class="thumbnail" src="thumbnails/html-css-thumbnail.avif" alt="HTML and CSS Thumbnail">
     <input class="search-bar" type="text" placeholder="search">
 
-    <p>
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/Marques-thumbnail.avif" alt="Marques Brownlee Thumbnail">
+
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">
       Marques Brownlee
     </p>
+    <p class="video-stats">
+      3.4M views ⋅ 2 years ago
+    </p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/interview-thumbnail.avif" alt="Marques Brownlee Thumbnail">
+
+    <p class="video-title">
+      Google Coding Interview With A High School Student
+    </p>
+    <p class="video-author">
+      Clément Mihailescu
+    </p>
+    <p class="video-stats">
+      4.2M views ⋅ 4 years ago
+    </p>
+    </div>
   </body>
 </html>
