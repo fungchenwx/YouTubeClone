@@ -15,7 +15,7 @@
       }
 
       .thumbnail {
-        width: 300px;
+        width: 100%;
       }
 
       .search-bar {
@@ -23,11 +23,15 @@
         margin-left: 12px;
       }
 
-      .video-preview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 15px;
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 18px;
+      }
+
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 40px 1fr;
       }
 
       .thumbnail,
@@ -37,20 +41,12 @@
       }
 
       .channel-pfp {
-        display: inline-block;
-        width: 36px;
-        vertical-align: top;
         margin-right: 6px;
       }
 
       .pfp {
         width: 100%;
         border-radius: 50%;
-      }
-
-      .video-info {
-        display: inline-block;
-        width: 200px;
       }
 
       .video-title {
@@ -70,72 +66,138 @@
       }
     </style>
   </head>
-  <body>
+  <body style="padding-bottom: 1000px;">
     <input class="search-bar" type="text" placeholder="search">
-
-    <div class="video-preview">
-      <div>
-        <img class="thumbnail" src="thumbnails/Marques-thumbnail.avif" alt="Marques Brownlee Thumbnail">
-      </div>
-
-      <div>
-        <div class="channel-pfp">
-          <img class ="pfp" src="pfp/Marques-pfp.jpg">
+    <div class="video-grid">
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/Marques-thumbnail.avif" alt="Marques Brownlee Thumbnail">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-          </p>
-          <p class="video-author">
-            Marques Brownlee
-          </p>
-          <p class="video-stats">
-            3.4M views ⋅ 2 years ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class ="pfp" src="pfp/Marques-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              4.3M views ⋅ 3 years ago
+            </p>
+          </div>  
         </div>  
-      </div>  
-    </div>
-
-    <div class="video-preview">
-      <div>
-        <img class="thumbnail" src="thumbnails/interview-thumbnail.avif" alt="Google Interview Thumbnail">
       </div>
-      <div>
-        <div class="channel-pfp">
-          <img class="pfp" src="pfp/Clément-pfp.jpg">
+  
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/interview-thumbnail.avif" alt="Google Interview Thumbnail">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            Google Coding Interview With A High School Student
-          </p>
-          <p class="video-author">
-            Clément Mihailescu
-          </p>
-          <p class="video-stats">
-            4.2M views ⋅ 4 years ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class="pfp" src="pfp/Clément-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Google Coding Interview With A High School Student
+            </p>
+            <p class="video-author">
+              Clément Mihailescu
+            </p>
+            <p class="video-stats">
+              4.2M views ⋅ 4 years ago
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="video-preview">
-      <div>
-        <img class="thumbnail" src="thumbnails/OJ-thumbnail.avif" alt="OJ Chess Thumbnail">
-      </div>
-      <div>
-        <div class="channel-pfp">
-          <img class="pfp" src="pfp/OJ-pfp.jpg">
+  
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/OJ-thumbnail.avif" alt="OJ Chess Thumbnail">
         </div>
-        <div class="video-info">
-          <p class="video-title">
-            How I accidentally tied against a grandmaster in chess
-          </p>
-          <p class="video-author">
-            Orange Juice Gaming
-          </p>
-          <p class="video-stats">
-            392K views ⋅ 1 year ago
-          </p>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class="pfp" src="pfp/OJ-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How I accidentally tied against a grandmaster in chess
+            </p>
+            <p class="video-author">
+              Orange Juice Gaming
+            </p>
+            <p class="video-stats">
+              392K views ⋅ 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/Marques-thumbnail.avif" alt="Marques Brownlee Thumbnail">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class ="pfp" src="pfp/Marques-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="video-author">
+              Marques Brownlee
+            </p>
+            <p class="video-stats">
+              4.3M views ⋅ 3 years ago
+            </p>
+          </div>  
+        </div>  
+      </div>
+  
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/interview-thumbnail.avif" alt="Google Interview Thumbnail">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class="pfp" src="pfp/Clément-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Google Coding Interview With A High School Student
+            </p>
+            <p class="video-author">
+              Clément Mihailescu
+            </p>
+            <p class="video-stats">
+              4.2M views ⋅ 4 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="video-preview">
+        <div>
+          <img class="thumbnail" src="thumbnails/OJ-thumbnail.avif" alt="OJ Chess Thumbnail">
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-pfp">
+            <img class="pfp" src="pfp/OJ-pfp.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How I accidentally tied against a grandmaster in chess
+            </p>
+            <p class="video-author">
+              Orange Juice Gaming
+            </p>
+            <p class="video-stats">
+              392K views ⋅ 1 year ago
+            </p>
+          </div>
         </div>
       </div>
     </div>
