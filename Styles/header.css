@@ -1,3 +1,71 @@
 .header {
   height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;  
+}
+
+.hamberger-menu {
+  height: 22px;
+  margin-left: 24px;
+  margin-right:24px;
+}
+.youtube-logo {
+  height: 22px;
+}
+
+.middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  height: 34px;
+  width: 279px;
+  border-radius: 2px;
+  box-shadow: inset;
+}
+
+.search-button {
+  height: 40px;
+  width: 60px;
+}
+
+.search {
+  height: 25px;
+}
+
+.voice-search-icon-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.voice-search-icon {
+  height: 25px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;  
+}
+
+.upload {
+  height: 22px;
+  background-color: lightgray;
+  border-radius: 1px;
+}
+
+.youtube-apps {
+  
+}
+
+.nofications {
+  height: 22px;
 }
