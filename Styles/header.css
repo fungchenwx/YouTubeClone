@@ -1,5 +1,5 @@
 .header {
-  height: 55px;
+  height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,6 +7,7 @@
 
 .left-section {
   display: flex;
+  flex: 1;
   align-items: center;  
 }
 
@@ -15,26 +16,39 @@
   margin-left: 24px;
   margin-right:24px;
 }
+
 .youtube-logo {
   height: 22px;
 }
 
 .middle-section {
-  flex: 1;
   display: flex;
+  flex: 2;
   align-items: center;
 }
 
 .search-bar {
-  height: 34px;
-  width: 279px;
-  border-radius: 2px;
-  box-shadow: inset;
+  height: 36px;
+  width: 78%;
+  margin-left: 38px;
+  align-items: center;
+  padding-left: 0.85em;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+}
+
+.search-bar::placeholder {
+  color: #888;
+  font-size: 1rem;
 }
 
 .search-button {
   height: 40px;
-  width: 60px;
+  width: 65px;
+  margin-left: -50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 1px solid #ccc;
 }
 
 .search {
@@ -45,6 +59,8 @@
   height: 40px;
   width: 40px;
   border-radius: 50px;
+  margin-left: 16px;
+  border: 1px solid #ccc;
 }
 
 .voice-search-icon {
@@ -53,19 +69,21 @@
 
 .right-section {
   display: flex;
-  align-items: center;  
+  flex: 1;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .upload {
-  height: 22px;
-  background-color: lightgray;
-  border-radius: 1px;
+  height: 36px;
 }
 
 .youtube-apps {
-  
+  height: 36px;
+  margin-left: 20px;
 }
 
-.nofications {
-  height: 22px;
+.notifications {
+  height: 36px;
+  margin-left: 20px;
 }
