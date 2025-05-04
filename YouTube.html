@@ -1,168 +1,223 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Tab Title -->
     <title>YouTube.com Clone</title>
 
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+      rel="stylesheet"
+    >
+    <!-- CSS Files -->
     <link rel="stylesheet" href="Styles/general.css">
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/video.css">
   </head>
   <body style="padding-bottom: 500px;">
+
+    <!-- Header Section -->
     <div class="header">
+      <!-- Left Header Section -->
       <div class="left-section">
-        <img class="hamberger-menu" src="Icons/hamburger-menu.svg">
-        <img class="youtube-logo" src="Icons/youtube-logo.svg">
+        <img 
+          class="hamberger-menu" 
+          src="Icons/hamburger-menu.svg"
+        >
+        <img 
+          class="youtube-logo" 
+          src="Icons/youtube-logo.svg"
+        >
       </div>
+      <!-- Middle Header Section -->
       <div class="middle-section">
         <input class="search-bar" 
-            type="text" 
-            placeholder="Search"
-        />
+          type="text" 
+          placeholder="Search"
+        >
         <button class="search-button">
           <img class="search" src="Icons/search.svg">
         </button>
         <button class="voice-search-icon-button">
-          <img class="voice-search-icon" src="Icons/voice-search-icon.svg">
+          <img 
+            class="voice-search-icon" 
+            src="Icons/voice-search-icon.svg"
+          >
         </button>
       </div>
+      <!-- Right Header Section -->
       <div class="right-section">
-        <img class="notifications" src="Icons/notifications.svg">
-        <img class="youtube-apps" src="Icons/youtube-apps.svg">
-        <img class="upload" src="Icons/upload.svg">
+        <img 
+          class="notifications" 
+          src="Icons/notifications.svg"
+        >
+        <img 
+          class="youtube-apps" 
+          src="Icons/youtube-apps.svg"
+        >
+        <img 
+          class="upload" 
+          src="Icons/upload.svg"
+        >
       </div>
     </div>
-    <div class="video-grid">
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/Marques-thumbnail.avif" alt="Marques Brownlee Thumbnail">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class ="pfp" src="pfp/Marques-pfp.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </p>
-            <p class="video-author">
-              Marques Brownlee
-            </p>
-            <p class="video-stats">
-              4.3M views ⋅ 3 years ago
-            </p>
+    <!-- Generic Layouts -->
+    <div class="layout">
+      <!-- Navigation Bar -->
+      <div class="navigation_bar">
+
+      </div>
+      <!-- Video Section -->
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-preview">
+          <img 
+            class="thumbnail" 
+            src="thumbnails/Marques-thumbnail.avif" 
+            alt="Marques Brownlee Thumbnail"
+          >
+          <div class="video-info-grid">
+            <img 
+              class="pfp" 
+              src="pfp/Marques-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </p>
+              <p class="video-author">
+                Marques Brownlee
+              </p>
+              <p class="video-stats">
+                4.3M views ⋅ 3 years ago
+              </p>
+            </div>  
           </div>  
-        </div>  
-      </div>
-  
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/interview-thumbnail.avif" alt="Google Interview Thumbnail">
         </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class="pfp" src="pfp/Clément-pfp.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              Google Coding Interview With A High School Student
-            </p>
-            <p class="video-author">
-              Clément Mihailescu
-            </p>
-            <p class="video-stats">
-              4.2M views ⋅ 4 years ago
-            </p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/OJ-thumbnail.avif" alt="OJ Chess Thumbnail">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class="pfp" src="pfp/OJ-pfp.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              How I accidentally tied against a grandmaster in chess
-            </p>
-            <p class="video-author">
-              Orange Juice Gaming
-            </p>
-            <p class="video-stats">
-              392K views ⋅ 1 year ago
-            </p>
+        <!-- Video 2 -->
+        <div class="video-preview">
+          <img 
+            class="thumbnail" 
+            src="thumbnails/interview-thumbnail.avif" 
+            alt="Google Interview Thumbnail"
+          >
+          <div class="video-info-grid">
+            <img 
+              class="pfp" 
+              src="pfp/Clément-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                Google Coding Interview With A High School Student
+              </p>
+              <p class="video-author">
+                Clément Mihailescu
+              </p>
+              <p class="video-stats">
+                4.2M views ⋅ 4 years ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/rtx-thumbnail.avif" alt="Marques Brownlee Thumbnail">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class ="pfp" src="pfp/LTT-pfp.jpg">
+        <!-- Video 3 -->
+        <div class="video-preview">
+          <img 
+            class="thumbnail" 
+            src="thumbnails/OJ-thumbnail.avif" 
+            alt="OJ Chess Thumbnail"
+          >
+          <div class="video-info-grid">
+            <img 
+              class="pfp" 
+              src="pfp/OJ-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                How I accidentally tied against a grandmaster in chess
+              </p>
+              <p class="video-author">
+                Orange Juice Gaming
+              </p>
+              <p class="video-stats">
+                392K views ⋅ 1 year ago
+              </p>
+            </div>
           </div>
-          <div class="video-info">
-            <p class="video-title">
-              I Was The FIRST To Game On The RTX 5090 - NVIDIA 50 Series Announcement
-            <p class="video-author">
-              Linus Tech Tips
-            </p>
-            <p class="video-stats">
-              3.8M views ⋅ 2 days ago
-            </p>
+        </div>
+        <!-- Video 4 -->
+        <div class="video-preview">
+            <img 
+              class="thumbnail" 
+              src="thumbnails/rtx-thumbnail.avif" 
+              alt="Marques Brownlee Thumbnail"
+            >
+          <div class="video-info-grid">
+            <img 
+              class ="pfp" 
+              src="pfp/LTT-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                I Was The FIRST To Game On The RTX 5090 - NVIDIA 50 Series Announcement
+              <p class="video-author">
+                Linus Tech Tips
+              </p>
+              <p class="video-stats">
+                3.8M views ⋅ 2 days ago
+              </p>
+            </div>  
           </div>  
-        </div>  
-      </div>
-  
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/squid-thumbnail.avif" alt="Google Interview Thumbnail">
         </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class="pfp" src="pfp/howtobeat-pfp.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              How To Beat EVERY DEATH GAME In "Squid Game Season 2"
-            </p>
-            <p class="video-author">
-              How To Beat
-            </p>
-            <p class="video-stats">
-              1M views ⋅ 3 days ago
-            </p>
+        <!-- Video 5 -->
+        <div class="video-preview">
+          <img 
+            class="thumbnail" 
+            src="thumbnails/squid-thumbnail.avif" 
+            alt="Google Interview Thumbnail"
+          >
+          <div class="video-info-grid">
+            <img 
+              class="pfp" 
+              src="pfp/howtobeat-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                How To Beat EVERY DEATH GAME In "Squid Game Season 2"
+              </p>
+              <p class="video-author">
+                How To Beat
+              </p>
+              <p class="video-stats">
+                1M views ⋅ 3 days ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div>
-          <img class="thumbnail" src="thumbnails/winstreak-thumbnail.avif" alt="OJ Chess Thumbnail">
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-pfp">
-            <img class="pfp" src="pfp/Technoblade-pfp.jpg">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-              bedwars 1000 winstreak (world record)
-            </p>
-            <p class="video-author">
-              Technoblade
-            </p>
-            <p class="video-stats">
-              392K views ⋅ 1 year ago
-            </p>
+        <!-- Video 6 -->
+        <div class="video-preview">
+          <img
+            class="thumbnail" 
+            src="thumbnails/winstreak-thumbnail.avif" 
+            alt="OJ Chess Thumbnail"
+          >
+          <div class="video-info-grid">
+            <img 
+              class="pfp" 
+              src="pfp/Technoblade-pfp.jpg"
+            >
+            <div class="video-info">
+              <p class="video-title">
+                bedwars 1000 winstreak (world record)
+              </p>
+              <p class="video-author">
+                Technoblade
+              </p>
+              <p class="video-stats">
+                392K views ⋅ 1 year ago
+              </p>
+            </div>
           </div>
         </div>
       </div>
