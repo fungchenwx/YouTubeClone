@@ -1,0 +1,62 @@
+.layout {
+  display: flex;
+}
+
+.navigation_bar {
+  width: 420px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.navigation_bar button {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px white;
+  gap: 1em;
+  align-items: center;
+}
+
+.navigation_bar button p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation_bar button:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.navigation_bar button:active {
+  filter: brightness(80%);
+}
+
+.navigation_bar .icons {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0%);
+}
+
+.section_texts {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-style: Arial;
+  font-weight: 500;
+  font-size: 95%;
+}
+
+.home_section {
+  height: 95px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.you_section {
+  height: 250px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+
+

@@ -3,22 +3,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 16px;
 }
 
 .left-section {
   display: flex;
   flex: 1;
-  align-items: center;  
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;  
 }
 
-.hamberger-menu {
-  height: 22px;
-  margin-left: 24px;
-  margin-right:24px;
-}
-
+.hamberger-menu,
 .youtube-logo {
   height: 22px;
+  margin-top: 2px;
+}
+
+.youtube-logo-button,
+.hamberger-menu-button {
+  background-color: white;
+  border: 1px solid white;
+}
+
+.hamberger-menu-button:hover {
+  filter: brightness(90%);
+}
+
+.hamberger-menu-button:active {
+  filter: brightness(70%);
 }
 
 .middle-section {
@@ -27,14 +41,22 @@
   align-items: center;
 }
 
+.middle-section button:hover {
+  filter: brightness(90%);
+}
+
+.middle-section button:active {
+  filter: brightness(70%);
+}
+
 .search-bar {
   height: 36px;
-  width: 78%;
+  width: 500px;
   margin-left: 38px;
   align-items: center;
   padding-left: 0.85em;
-  border-radius: 50px;
-  border: 1px solid #ccc;
+  border-radius: 50px 0 0 50px;
+  border: 1px solid rgb(230, 230, 230);
 }
 
 .search-bar::placeholder {
@@ -45,10 +67,9 @@
 .search-button {
   height: 40px;
   width: 65px;
-  margin-left: -50px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(230, 230, 230);
 }
 
 .search {
@@ -60,7 +81,7 @@
   width: 40px;
   border-radius: 50px;
   margin-left: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
 }
 
 .voice-search-icon {
@@ -74,16 +95,18 @@
   flex-direction: row-reverse;
 }
 
-.upload {
-  height: 36px;
+.right-section button {
+  height: 40px;
+  width: 40px;
+  margin-right: 30px;
+  background-color: white;
+  border: 1px solid white;
 }
 
-.youtube-apps {
-  height: 36px;
-  margin-left: 20px;
+.right-section button:hover {
+  filter: brightness(90%);
 }
 
-.notifications {
-  height: 36px;
-  margin-left: 20px;
+.right-section button:active {
+  filter: brightness(70%);
 }

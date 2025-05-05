@@ -14,22 +14,25 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="Styles/general.css">
     <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/navigation.css">
     <link rel="stylesheet" href="Styles/video.css">
   </head>
-  <body style="padding-bottom: 500px;">
-
     <!-- Header Section -->
     <div class="header">
       <!-- Left Header Section -->
       <div class="left-section">
-        <img 
-          class="hamberger-menu" 
-          src="Icons/hamburger-menu.svg"
-        >
-        <img 
-          class="youtube-logo" 
-          src="Icons/youtube-logo.svg"
-        >
+        <button class="hamberger-menu-button">
+          <img 
+            class="hamberger-menu" 
+            src="Icons/hamburger-menu.svg"
+          >
+        </button>
+        <button class="youtube-logo-button">
+          <img 
+            class="youtube-logo" 
+            src="Icons/youtube-logo.svg"
+          >
+        </button>
       </div>
       <!-- Middle Header Section -->
       <div class="middle-section">
@@ -49,25 +52,98 @@
       </div>
       <!-- Right Header Section -->
       <div class="right-section">
-        <img 
-          class="notifications" 
-          src="Icons/notifications.svg"
-        >
-        <img 
-          class="youtube-apps" 
-          src="Icons/youtube-apps.svg"
-        >
-        <img 
-          class="upload" 
-          src="Icons/upload.svg"
-        >
+        <button class="notifications_button">
+          <img 
+            class="notifications" 
+            src="Icons/notifications.svg"
+          >
+        </button>
+        <button>
+          <img 
+            class="youtube-apps" 
+            src="Icons/youtube-apps.svg"
+          >
+        </button>
+        <button>
+          <img 
+            class="upload" 
+            src="Icons/upload.svg"
+          >
+        </button>
       </div>
     </div>
     <!-- Generic Layouts -->
     <div class="layout">
       <!-- Navigation Bar -->
       <div class="navigation_bar">
-
+        <!-- Home Section -->
+        <div class="home_section">
+          <button class="home_section_buttons">
+            <img class="icons" src="Icons/home.svg">
+            Home
+          </button>
+          <button class="home_section_buttons">
+            <img class="icons" src="Icons/subscriptions.svg">
+            Subscriptions
+          </button>
+        </div>
+        <!-- You Section -->
+        <div class="you_section">
+          <p class="section_texts">
+            You >
+          </p>
+          <button class="you_section_buttons">
+            <img 
+              class="icons" 
+              src="Icons/history.svg"
+            >
+            <p class="you_section_text">
+              History
+            </p>
+          </button>
+          <button class="you_section_buttons">
+            <img 
+              class="icons" 
+              src="Icons/playlist.svg"
+            >
+            <p class="you_section_text">
+              Playlists
+            </p>
+          </button>
+          <button class="you_section_buttons">
+            <img 
+              class="icons" 
+              src="Icons/your_videos.svg"
+            >
+            <p class="you_section_text">
+              Your videos
+            </p>
+          </button>
+          <button class="you_section_buttons">
+            <img 
+              class="icons" 
+              src="Icons/watch_later.svg"
+            >
+            <p class="you_section_text">
+              Watch later
+            </p>
+          </button>
+          <button class="you_section_buttons">
+            <img 
+              class="icons" 
+              src="Icons/like.svg"
+            >
+            <p class="you_section_text">
+              Liked videos
+            </p>
+          </button>
+        </div>
+        <!-- Subscriptions Section -->
+        <div class="subscriptions_section">
+          <p class="section_texts"> 
+            Subscriptions 
+          </p>
+        </div>
       </div>
       <!-- Video Section -->
       <div class="video-grid">
